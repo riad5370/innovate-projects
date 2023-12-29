@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -27,6 +28,12 @@ Route::post('/message/sent',[ContactController::class,'storeMessage'])->name('st
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
 
     Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+
+
+    //service-section
+    Route::resource('services',ServiceController::class);
+    Route::get('/services/status/{service}',[ServiceController::class, 'status'])->name('services.status');
+
 
 
     //contact

@@ -21,17 +21,16 @@
                 </div>
 
 
-                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false" aria-controls="collapseLayouts">
+                <a class="nav-link collapsed" href="{{route('services.index')}}">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Product Module
-                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    Services
                 </a>
-                <div class="collapse" id="product" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                {{-- <div class="collapse" id="product" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="">Add Product</a>
+                        <a class="nav-link" href="">Service</a>
                         <a class="nav-link" href="">Manage Product</a>
                     </nav>
-                </div>
+                </div> --}}
 
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#contact" aria-expanded="false" aria-controls="collapseLayouts">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
